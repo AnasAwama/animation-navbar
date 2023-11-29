@@ -1,0 +1,9 @@
+.bg {
+    width: 3000px; 
+    height: 2000px; 
+    background-image: url('image/Untitled-2.gif');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
