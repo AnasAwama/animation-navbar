@@ -1,2 +1,56 @@
+@keyframes moveRight {
+    from {
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    to {
+        margin-top: 50px;
+        margin-left: calc(100% - 210px);
+        transform: rotate(0deg);
+    } 
+}
 
-  
+@keyframes moveDown {
+    from {
+        margin-top: 50px;
+        margin-left: calc(100% - 210px);
+    }
+    to {
+        margin-top: calc(100vh - 300px); 
+        margin-left: calc(100% - 210px);
+        transform: rotate(90deg);
+    } 
+}
+
+@keyframes moveLeft {
+    from {
+        margin-top: calc(100vh - 300px);
+        margin-left: calc(100% - 210px);
+        transform: rotate(90deg);
+    }
+    to {
+        margin-top: calc(100vh - 300px);
+        margin-left: 10px;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes moveTop {
+    from {
+        margin-top: calc(100vh - 300px);
+        margin-left: 10px;
+        transform: rotate(180deg);
+    }
+    to {
+        margin-top: 50px;
+        margin-left: 60px;
+        transform: rotate(270deg);
+    }
+}
+
+img{width: 150px;
+    height: 255px;
+    transform: rotate(270deg);
+    animation: moveRight 4s ease-in-out infinite, moveDown 4s ease-in-out 3s infinite, moveLeft 3s ease-in-out 6s infinite, moveTop 3s ease-in-out 9s infinite;
+}
+
